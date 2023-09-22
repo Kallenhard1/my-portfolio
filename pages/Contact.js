@@ -27,7 +27,9 @@ const Contact = () => {
         <h2>Meu Email:</h2>
         <div className="EmailCopy">
           <span ref={emailRef}>marioluquinha210@gmail.com</span>
-          <button onClick={handleCopy}>copiar</button>
+          <button onClick={handleCopy} value={emailCopied}>
+            copiar
+          </button>
         </div>
       </div>
     </section>
