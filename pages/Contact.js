@@ -23,8 +23,7 @@ const Contact = () => {
   return (
     <section className="contactMeSection">
       <div className="container">
-        <h2>Me mande um Email!</h2>
-        <input type="text" placeholder="Coloque seu melhor Email aqui." />
+        <h3>Me mande um Email!</h3>
         <h2>Meu Email:</h2>
         <div className="EmailCopy">
           <span ref={emailRef}>marioluquinha210@gmail.com</span>
