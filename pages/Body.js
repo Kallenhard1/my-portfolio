@@ -1,5 +1,5 @@
 function Body() {
-  return <h3>---------- | Body | ----------</h3>;
+  return <h3>| Body [EM CONSTRUÇÃO] |</h3>;
 }
 
 export default Body;

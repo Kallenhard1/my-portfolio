@@ -10,6 +10,7 @@ function Home() {
       <h1>Luana, Eu Te Amo! Se você me ama, da uma risadinha</h1>
       <p>------------------------------</p>
       <Hero />
+      <p>------------------------------</p>
       <Body />
       <p>------------------------------</p>
       <Contact />
