@@ -2,7 +2,7 @@
 
 import React, { useState, useRef } from "react";
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./index.module.css";
 
 const Contact = () => {
   const [emailCopied, setEmailCopied] = useState(false);
@@ -21,13 +21,17 @@ const Contact = () => {
   };
 
   return (
-    <section className="contactMeSection">
-      <div className="container">
+    <section className={styles.footer}>
+      <div>
         <h3>Me mande um Email!</h3>
         <h2>Meu Email:</h2>
-        <div className="EmailCopy">
+        <div>
           <span ref={emailRef}>marioluquinha210@gmail.com</span>
-          <button onClick={handleCopy} value={emailCopied}>
+          <button
+            className={styles.EmailCopy}
+            onClick={handleCopy}
+            value={emailCopied}
+          >
             copiar
           </button>
         </div>
