@@ -11,7 +11,6 @@ function Home() {
     <div className={styles.body}>
       <Hero />
       <Body />
-      <Contact />
     </div>
   );
 }
