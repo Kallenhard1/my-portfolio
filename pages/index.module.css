@@ -153,6 +153,11 @@
   display: flex;
 }
 
+.em_construcao {
+  display: flex;
+  justify-content: center;
+}
+
 /* PROFILE SECTION */
 
 #profile {

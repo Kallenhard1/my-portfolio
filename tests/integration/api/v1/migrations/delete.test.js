@@ -10,8 +10,8 @@ test("DELETE to /api/v1/migrations should return 200", async () => {
   const response = await fetch("http://localhost:3000/api/v1/migrations", {
     method: "DELETE",
   });
-  const response2 = await fetch("http://localhost:3000/api/v1/status");
-  const responseBody2 = await response2.json();
+  const statusResponse = await fetch("http://localhost:3000/api/v1/status");
+  const responseBody2 = await statusResponse.json();
 
   console.log(responseBody2.dependencies.database.opened_connections);
   expect(responseBody2.dependencies.database.opened_connections).toEqual(1);
