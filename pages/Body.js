@@ -17,7 +17,7 @@ function Body() {
               GitHub:{" "}
               <a
                 href="https://github.com/Kallenhard1"
-                onclick="location.href='https://linkedin.com/in/mario-lucash'"
+                onClick="location.href='https://linkedin.com/in/mario-lucash'"
               >
                 /Kallenhard1
               </a>
@@ -26,7 +26,7 @@ function Body() {
               Linkedin:{" "}
               <a
                 href="https://www.linkedin.com/in/mario-lucash/"
-                onclick="location.href='https://linkedin.com/in/mario-lucash'"
+                onClick="location.href='https://linkedin.com/in/mario-lucash'"
               >
                 @mario-lucash
               </a>
@@ -34,7 +34,7 @@ function Body() {
           </div>
         </div>
       </section>
-      <section id="contact">
+      <section className={styles.section__contact}>
         <Contact />
       </section>
     </div>
