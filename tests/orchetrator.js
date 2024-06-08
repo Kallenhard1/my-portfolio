@@ -10,7 +10,10 @@ async function waitForAllServices() {
     });
 
     async function fetchStatusPage() {
-      const response = await fetch("http://localhost:3000/api/v1/status");
+      const response = await fetch("http://localhost:3000/api/v1/statussss");
+      if (!response.ok) {
+        throw new Error(`HTTP error ${response.status}`);
+      }
       await response.json();
     }
   }
