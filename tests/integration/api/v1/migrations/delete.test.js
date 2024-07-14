@@ -7,10 +7,9 @@ async function cleanDatabase() {
 }
 
 test("DELETE to /api/v1/migrations should return 200", async () => {
-  const response = await fetch("http://localhost:3000/api/v1/migrations", {
+  const statusResponse = await fetch("http://localhost:3000/api/v1/status", {
     method: "DELETE",
   });
-  const statusResponse = await fetch("http://localhost:3000/api/v1/status");
   const responseBody2 = await statusResponse.json();
 
   console.log(responseBody2.dependencies.database.opened_connections);
