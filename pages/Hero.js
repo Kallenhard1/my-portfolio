@@ -1,7 +1,5 @@
 "use client";
 
-import React, { useState, useRef } from "react";
-import Image from "next/image";
 import styles from "./index.module.css";
 
 const Hero = () => {
